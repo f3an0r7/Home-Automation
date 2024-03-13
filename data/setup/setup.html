@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="setupstyle.css">
+    <title>Wifi Setup</title>
+</head>
+
+<body>
+    <div id="wraper">
+        <h1>WiFi Setup</h1>
+        <hr>
+        <div id="SSID">
+            <div class="wifisvg">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500"
+                    style="enable-background:new 0 0 494.45 494.45;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M395.225,277.325c-6.8,0-13.5-2.6-18.7-7.8c-71.4-71.3-187.4-71.3-258.8,0c-10.3,10.3-27.1,10.3-37.4,0
+				s-10.3-27.1,0-37.4c92-92,241.6-92,333.6,0c10.3,10.3,10.3,27.1,0,37.4C408.725,274.725,401.925,277.325,395.225,277.325z" />
+                            </g>
+                            <g>
+                                <path d="M323.625,348.825c-6.8,0-13.5-2.6-18.7-7.8c-15.4-15.4-36-23.9-57.8-23.9s-42.4,8.5-57.8,23.9
+				c-10.3,10.3-27.1,10.3-37.4,0c-10.3-10.3-10.3-27.1,0-37.4c25.4-25.4,59.2-39.4,95.2-39.4s69.8,14,95.2,39.5
+				c10.3,10.3,10.3,27.1,0,37.4C337.225,346.225,330.425,348.825,323.625,348.825z" />
+                            </g>
+                            <g>
+                                <circle cx="247.125" cy="398.925" r="35.3" />
+                            </g>
+                            <g>
+                                <path d="M467.925,204.625c-6.8,0-13.5-2.6-18.7-7.8c-111.5-111.4-292.7-111.4-404.1,0c-10.3,10.3-27.1,10.3-37.4,0
+				s-10.3-27.1,0-37.4c64-64,149-99.2,239.5-99.2s175.5,35.2,239.5,99.2c10.3,10.3,10.3,27.1,0,37.4
+				C481.425,202.025,474.625,204.625,467.925,204.625z" />
+                            </g>
+                        </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </svg>
+            </div>
+            <input type="text" class="input" name="SSID" id="SSIDform" placeholder="WiFi Name" required>
+        </div>
+        <div id="pass">
+            <div class="locksvg">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500"
+                    style="enable-background:new 0 0 470 470;" xml:space="preserve">
+                    <g>
+                        <circle cx="235" cy="312.5" r="157.5" />
+                        <path d="M162.5,139.546V102.5c0-39.977,32.523-72.5,72.5-72.5s72.5,32.523,72.5,72.5v37.046c0.164,0.069,0.329,0.132,0.493,0.201
+                c10.347,4.376,20.196,9.637,29.507,15.724V102.5C337.5,45.981,291.519,0,235,0S132.5,45.981,132.5,102.5v52.97
+                c9.311-6.086,19.161-11.347,29.507-15.724C162.171,139.678,162.336,139.615,162.5,139.546z" />
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </svg>
+            </div>
+            <input type="password" class="input" name="pass" id="passform" required placeholder="Password">
+        </div>
+        <div id="submit_btns">
+            <button type="submit" id="submitbtn">Submit</button>
+            <button type="submit" id="con_to_open">Connect to Open network</button>
+            <button type="submit" id="restart">Restart with saved credentials</button>
+        </div>
+        <p class="message"></p>
+        <div class="loader">
+            <div class="leap-frog">
+                <div class="leap-frog__dot"></div>
+                <div class="leap-frog__dot"></div>
+                <div class="leap-frog__dot"></div>
+            </div>
+        </div>
+    </div>
+    <script src="setupscript.js"></script>
+</body>
+
+</html>
