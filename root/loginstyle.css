@@ -1,0 +1,122 @@
+/* body{
+    display: flex;
+    align-items: center;
+    align-content: center;
+ 
+} */
+
+.mainContainer {
+    display    : flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.login_wrapper{
+    left: 15vw;
+    position: relative;
+}
+.bgsvg {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width : 45em;
+    height: auto;
+}
+
+.card {
+    align-self: center;
+    margin: 2em;
+    width             : 15em;
+    height            : auto;    
+    background        : #F4F6FB;
+    border            : 1px solid white;
+    box-shadow        : 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow   : 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+}
+
+.form {
+    padding: 25px;
+}
+
+.card_header {
+    display    : flex;
+    align-items: center;
+}
+
+.card svg {
+    color        : #2F4858;
+    margin-bottom: 20px;
+    margin-right : 5px;
+}
+
+.form_heading {
+    padding-bottom: 20px;
+    font-size     : 21px;
+    color         : #7878bd;
+}
+
+.field {
+    padding-bottom: 10px;
+}
+
+.input {
+    border-radius   : 5px;
+    background-color: #e9e9f7;
+    padding         : 5px;
+    width           : 100%;
+    color           : #7a7ab3;
+    border          : 1px solid #dadaf7
+}
+
+.input:focus-visible {
+    outline: 1px solid #aeaed6;
+}
+
+.input::placeholder {
+    color: #bcbcdf;
+}
+
+label {
+    color         : #2F4858;
+    font-size     : 14px;
+    display       : block;
+    padding-bottom: 4px;
+}
+
+button {
+    border: none;
+    background-color: #41A59F;
+    margin-top      : 10px;
+    font-size       : 14px;
+    padding         : 7px 12px;
+    font-weight     : 500;
+    color           : white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.username_svg{
+    padding: 0%;
+    width: 2em;
+    height: 2em;
+}
+.username_svg svg{
+    padding-top: 0.5em;
+    margin: 0%;
+}
+
+.username_field,.password_field{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.password_svg{
+    height: 2em;
+    width: 2em;
+    /* padding-right: 0.3em; */
+}
